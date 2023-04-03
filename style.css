@@ -191,19 +191,23 @@ select {
     font-family: var(--font-small-text);
 }
 
-.content-images {
+.wraper-images {
     padding: 0 0 104px 80px;
+    /* display: flex;
+    flex-direction: row; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .music-record {
     margin: 0 0 24px 24px;
 }
 
-.record-left {
+.img-left {
     margin-left: 0;
 }
 
-.record-bottom {
+.img-bottom {
     margin-bottom: 0;
 }
 
@@ -261,12 +265,33 @@ li {
 }
 
 
+
+.image-1 {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-1:hover .card {
+    visibility: visible;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     width: 285px;
     height: 285px;
     background-color: var(--color-for-hover);
+
+
+    position: absolute;
+    top: 0;
+    left: 24px;
+    visibility: hidden;
+}
+
+.card-left {
+    left: 0;
 }
 
 .card-top {
@@ -310,4 +335,3 @@ li {
 /* .card-cart {
  background-image: url(./images/back-color-forcart.png);
 } */
-
