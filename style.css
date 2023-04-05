@@ -249,6 +249,8 @@ li {
 .link-list {
     text-decoration: none;
     color: var(--color-text);
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .footer-adress {
