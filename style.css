@@ -31,10 +31,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
-    margin-top: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 20px 80px 16px 80px;
+    
 }
 
 .left-side {
@@ -308,7 +306,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px 32px 24px;
+    padding: 0 24px 10px 24px;
 }
 
 .card-price {
@@ -336,4 +334,19 @@ li {
     width: 44px;
     height: 44px;
     border-radius: 50px;
+}
+
+
+
+
+.wrapper-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-left: 80px;
+}
+
+.image-1 {
+    width: 285px;
+    height: 285px;
 }
